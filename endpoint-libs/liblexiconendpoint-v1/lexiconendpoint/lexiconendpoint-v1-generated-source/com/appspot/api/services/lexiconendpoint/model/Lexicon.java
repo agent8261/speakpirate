@@ -16,7 +16,6 @@
 package com.appspot.api.services.lexiconendpoint.model;
 
 import com.google.api.client.http.HttpHeaders;
-
 import com.google.api.client.json.GenericJson;
 
 /**
@@ -29,27 +28,40 @@ import com.google.api.client.json.GenericJson;
  *
  * @author Google, Inc.
  */
-public final class Lexicon extends GenericJson {
+public final class Lexicon extends GenericJson 
+{
+  @com.google.api.client.util.Key
+  private String pirateText;
+
+  @com.google.api.client.util.Key
+  private String engText;
+
+  public String getPirateText() 
+  {  return pirateText;  }
+
+  public Lexicon setPirateText(String pirateText) 
+  {  this.pirateText = pirateText; return this;  }
+
+  public String getEngText() 
+  {  return engText;  }
+
+  public Lexicon setEngText(String engText) 
+  {  this.engText = engText;  return this;  }
 
   private HttpHeaders responseHeaders;
 
-  /**
-   * Sets the HTTP headers returned with the server response, or <code>null</code>.
-   *
+  /**Sets the HTTP headers returned with the server response, or <code>null</code>.
    * This member should only be non-null if this object was the top level element of a response. For
    * example, a request that returns a single {@link Lexicon} would include the response headers,
    * while a request which returns an array of {@link Lexicon}, would have a non-null response
-   * header in the enclosing object only.
-   */
-  public void setResponseHeaders(HttpHeaders responseHeaders) {
-    this.responseHeaders = responseHeaders;
-  }
+   * header in the enclosing object only.*/
+  public void setResponseHeaders(HttpHeaders responseHeaders) 
+  {  this.responseHeaders = responseHeaders;  }
 
   /**
    * Returns the HTTP headers that were returned with the server response, or
    * <code>null</code>.
    */
-  public HttpHeaders getResponseHeaders() {
-    return responseHeaders;
-  }
+  public HttpHeaders getResponseHeaders() 
+  {  return responseHeaders;  }
 }

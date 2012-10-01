@@ -8,8 +8,8 @@
 
   <groupId>com.google.apis</groupId>
   <artifactId>google-api-services-lexiconendpoint</artifactId>
-  <version>v1-rev20120930173805-1.8.0-beta</version>
-  <name> v1 (revision 20120930173805)</name>
+  <version>v1-rev20121001173429-1.8.0-beta</version>
+  <name> v1 (revision 20121001173429)</name>
   <packaging>jar</packaging>
 
   <inceptionYear>2011</inceptionYear>

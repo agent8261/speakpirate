@@ -21,8 +21,9 @@ import java.util.Properties;
  */
 public class CloudEndpointUtils {
 
-  public static final boolean LOCAL_ANDROID_RUN = false;
-  private static final String LOCAL_APP_ENGINE_SERVER_URL = "http://10.0.2.2:8888";
+  public static final boolean LOCAL_ANDROID_RUN = true;
+  // This needs to be the address of the computer if you are testing locally
+  private static final String LOCAL_APP_ENGINE_SERVER_URL = "http://67.194.195.15:8888";
 
   /**
    * Updates the Google client builder to connect the appropriate server based on

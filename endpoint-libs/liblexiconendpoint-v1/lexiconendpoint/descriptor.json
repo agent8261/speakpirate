@@ -1,7 +1,7 @@
 {
   "files": [
     {
-      "path": "myapp-api-lexiconendpoint-v1-rev20120930173805-1.8.0-beta-sources.jar", 
+      "path": "myapp-api-lexiconendpoint-v1-rev20121001173429-1.8.0-beta-sources.jar", 
       "type": "source"
     }
   ], 
@@ -748,5 +748,5 @@
   ], 
   "language_version": "1.8.0-beta", 
   "id": "lexiconendpoint:v1", 
-  "revision": 20120930173805
+  "revision": 20121001173429
 }
